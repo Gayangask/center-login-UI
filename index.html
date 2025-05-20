@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
+<main>
     <form method="post" id="frmLogin">
         <img src="images/user.jpeg" alt="user" id="user">
         
@@ -22,25 +23,29 @@
         
         <h4 class="username">Username</h4>
         
-        <input type="text" id="username">
+        <input type="text" id="username" placeholder="Username">
 
         <h4 class="password">Password</h4>
 
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="password" placeholder="Password">
 
+        
+        <div class="buttons">
         <button type="submit" id="btnlogin">LOGIN</button>
         <button type="reset" id="btnreset">RESET</button>
+        </div>
 
-        <h4 class="fgpassword">Forget Password?<span><a href="#" id="signin">Sign-up</a></span>
+
+        <h4 class="fgpassword">NO Account?<span><a href="#" id="signin">Sign-up</a></span>
         </h4>
 
         <h4 class="signupop">OR sign-up with</h4>
 
-        <button class="googlesignup"><a href="www.google.com" target="_blank"></a></button>
-
-        <button class="githubsignup"><a href="www.github.com" target="_blank"></a> </button>
-
+        <div class="links">
+        <a href="http://www.google.com"><img src="images/google.svg" alt="google" srcset="" class="google" ></a>
+        <a href="http://www.github.com"><img src="images/github.svg" alt="github" srcset="" class="github" ></a>
         
+        </div>
         
 
             
@@ -48,7 +53,7 @@
 
 
     </form> 
-
+</main>
 
 
 

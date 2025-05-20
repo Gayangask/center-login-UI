@@ -1,6 +1,86 @@
 *{
     font-family: "Tagesschrift", system-ui;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    box-sizing: border-box;
+
+    --color-accent:rgb(220, 239, 251);
+    
+
+}body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-image: url("../images/R.jpeg");
+    background-position: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#user{
+    width: 5rem;
+    aspect-ratio: 1/1;
+}
+form{
+    
+    background-color: var(--color-accent);
+    width: 100%;
+    height: max-content;
+
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:0 0 10px var(--color-accent);
+    border-radius: 10px 40px;
+
+    
+
+}.google{
+    width: 2rem;
+}.github{
+    width: 2rem;
+}.links{
+    display: flex;
+    margin-top: 15px;
 
 
+}
+#user{
 
+    border-radius: 50%;
+    border: 2px solid blue;
+}
+.login{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+#username{
+
+    border: none;
+    outline:none ;
+    background-color: var(--color-accent);
+    border-bottom: 2px solid blue;
+
+    margin-top: 10px;
+    margin-bottom: 25px;
+}#password{
+
+     border: none;
+    outline:none ;
+    background-color: var(--color-accent);
+    border-bottom: 2px solid blue;
+    margin-top: 10px;
+
+}.buttons{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
