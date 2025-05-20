@@ -81,6 +81,43 @@ form{
 }.buttons{
 
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;  
+}
+#btnlogin{
+
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    color:blue;
+    background-color: var(--color-accent);
+    font-size:1.2rem;
+}
+#btnreset{
+
+    
+     margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    color:rgb(255, 0, 0);
+    background-color: var(--color-accent);
+    font-size:1.2rem;
+}#btnlogin:hover{
+
+    transition: all ease 1000ms;
+    background-color:blue;
+    color: aliceblue;
+    width: 8rem;
+    border-radius: 10px 20px;
+    
+
+}#btnreset:hover{
+
+    transition: all ease 1000ms;
+    background-color:rgb(255, 0, 0);
+    color: aliceblue;
+    width: 8rem;
+    border-radius: 10px 20px;
+
 }
