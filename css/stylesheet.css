@@ -131,3 +131,68 @@ form{
     width: 100%;
     margin-top: 10px;
 }
+/*-----------------Custom radio button-----------------*/
+
+.customradiobtn{
+
+    display: flex;
+    flex-direction: row;
+
+    
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    
+
+}
+.customradiobtn .checkmark{
+
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+   
+    
+    top: -5px;
+    left: -5px;
+
+    cursor: pointer;
+   
+    margin-right: 10px;
+    
+    
+    
+}.customradiobtn input{
+    
+
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+.customradiobtn input:hover ~ .checkmark{
+
+    background-color: darkgray;
+}
+.customradiobtn input:checked ~ .checkmark{
+
+    background-color: blue;
+}
+.checkmark:after{
+
+    content: "x";
+    position: absolute;
+    display: none;
+
+}.customradiobtn .checkmark:after{
+
+    content: "x";
+    width: 25px;
+    height: 25px;
+    color: white;
+    top: -4.5px;
+    left: 4.5px;
+}
+.customradiobtn input:checked ~ .checkmark:after{
+
+    display:block
+}
