@@ -179,7 +179,7 @@ form{
 }
 .checkmark:after{
 
-    content: "x";
+    content: "";
     position: absolute;
     display: none;
 
