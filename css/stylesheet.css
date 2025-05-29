@@ -185,7 +185,7 @@ form{
 
 }.customradiobtn .checkmark:after{
 
-    content: "x";
+    content: "";
     width: 25px;
     height: 25px;
     color: white;
